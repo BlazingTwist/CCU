@@ -199,6 +199,7 @@
     <Compile Include="Systems\Object Variables\Container\Containers.cs" />
     <Compile Include="Systems\Object Variables\Investigateable\Investigateables.cs" />
     <Compile Include="Systems\Object Variables\ObjectVariables.cs" />
+    <Compile Include="TextTableBuilder.cs" />
     <Compile Include="Traits\Appearance\Body Type\Alien_Body.cs" />
     <Compile Include="Traits\Appearance\Eye Color Special\Beady_Eyed.cs" />
     <Compile Include="Traits\Appearance\Hair Color Grouped\Demographic_Colors.cs" />
