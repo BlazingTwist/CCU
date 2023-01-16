@@ -301,12 +301,6 @@
             <param name="pullUp"></param>
             <exception cref="T:System.IO.InvalidDataException">thrown when no prefix, replace and postfix sequence is specified -> cannot match for anything</exception>
         </member>
-        <member name="M:BTHarmonyUtils.internal.InstructionReplacementTranspiler.MoveLabels(System.Collections.Generic.List{HarmonyLib.CodeInstruction},System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Move the labels in the replace-sequence and first label of postfix-sequence to beginning of insert-sequence
-            </summary>
-            <returns>a new insert-sequence with adjusted labels</returns>
-        </member>
         <member name="T:BTHarmonyUtils.internal.ITranspilerPatch">
             <summary>
             Because the CodeReplacementPatch constructor is in use by published mods,
