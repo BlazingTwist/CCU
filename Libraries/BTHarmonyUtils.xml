@@ -351,6 +351,51 @@
             This will probably never be used externally, but if you - for some reason - do, here it is.
             </summary>
         </member>
+        <member name="T:BTHarmonyUtils.LoggingUtils.InstructionTableBuilder">
+            <summary>
+            Useful for logging Instructions in a readable format.
+            </summary>
+        </member>
+        <member name="M:BTHarmonyUtils.LoggingUtils.InstructionTableBuilder.BuildTable(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+            <summary>
+            Builds a table containing a list of instructions.
+            </summary>
+            <param name="instructions">The instructions for the table</param>
+            <returns>The String representation of the table.</returns>
+        </member>
+        <member name="T:BTHarmonyUtils.LoggingUtils.TextTableBuilder">
+            <summary>
+            Useful for writing Tables to log files.
+            </summary>
+        </member>
+        <member name="M:BTHarmonyUtils.LoggingUtils.TextTableBuilder.Row(System.String[])">
+            <summary>
+            Adds a row to the table.
+            </summary>
+            <param name="columnText">SingleLine-Strings for each column</param>
+        </member>
+        <member name="M:BTHarmonyUtils.LoggingUtils.TextTableBuilder.ThinRowSeparator">
+            <summary>
+            Adds a thin separator-row to the table (e.g.: '|---+---|')
+            </summary>
+        </member>
+        <member name="M:BTHarmonyUtils.LoggingUtils.TextTableBuilder.ThickRowSeparator">
+            <summary>
+            Adds a thick separator-row to the table (e.g.: '|===+===|')
+            </summary>
+        </member>
+        <member name="M:BTHarmonyUtils.LoggingUtils.TextTableBuilder.EndTable">
+            <summary>
+            Adds a table-end separator-row to the table (e.g.: '\=======/')
+            </summary>
+        </member>
+        <member name="M:BTHarmonyUtils.LoggingUtils.TextTableBuilder.BuildTable(System.String)">
+            <summary>
+            Build the table to a String.
+            </summary>
+            <param name="tableIndent">A string to use for indenting the table (e.g.: '  ')</param>
+            <returns>The String representation of the table.</returns>
+        </member>
         <member name="T:BTHarmonyUtils.MidFixPatch.BTHarmonyMidFix">
             <summary>
             Marks a HarmonyPatch method as a MidFix (called in the middle of a method, rather than the beginning or end)
